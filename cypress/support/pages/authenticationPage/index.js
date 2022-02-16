@@ -13,21 +13,6 @@ class authenticationPage{
 
         cy.xpath(el.emailField).type(UtilFunctions.aleatoryStringAndNumber() + '@gmail.com')
         cy.get(el.createAccountButton).click()
-
-
-
-       //essa função é um "util"  que pode ser reutilizada em vários testes pois gera uma sequência aleatória de números e letras 
-       /* function aleatoryStringAndNumber() {
-
-            var text = "";
-            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-            for (var i = 0; i < 10; i++)
-                text += possible.charAt(Math.floor(Math.random() * possible.length));
-
-            return text;
-
-        }*/
     
     }
    
